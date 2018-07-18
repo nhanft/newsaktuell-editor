@@ -1,0 +1,3 @@
+interface Transformation {
+  transform(): string;
+}
