@@ -10,6 +10,6 @@
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var newsaktuell_editor_1 = require("./newsaktuell/editor/newsaktuell-editor");
-    module.exports(newsaktuell_editor_1.NewsaktuellEditor);
+    exports.NewsaktuellEditor = newsaktuell_editor_1.NewsaktuellEditor;
 });
 //# sourceMappingURL=index.js.map
