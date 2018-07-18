@@ -1,2 +1,3 @@
-import {Editor} from 'newsaktuell/editor/newsaktuell.editor';
-module.exports(Editor);
+import {NewsaktuellEditor} from "./newsaktuell/editor/newsaktuell-editor";
+
+module.exports(NewsaktuellEditor);

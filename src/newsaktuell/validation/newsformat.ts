@@ -1,4 +1,4 @@
-class Newsformat {
+export class Newsformat {
 
   constructor(private html: string) {}
 

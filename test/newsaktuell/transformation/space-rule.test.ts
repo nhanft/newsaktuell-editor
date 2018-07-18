@@ -1,7 +1,7 @@
 import {SpaceRule} from "../../../src/newsaktuell/transformation/space-rule";
 
 
-describe('NewsaktuellEditor', () => {
+describe('Transformations', () => {
 
   test('SpaceRule', async () => {
     let html = "Hallo Welt";
