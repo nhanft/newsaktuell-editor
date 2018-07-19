@@ -1,17 +1,27 @@
 import * as React from 'react';
-import { Editor, EditorState } from 'draft-js';
+import {Editor, EditorState} from 'draft-js';
+import {SpaceRule} from "../transformation/space-rule";
 
 export class NewsaktuellEditor extends React.Component<any, any> {
 
-  constructor(props: any) {
+  private transformation = new SpaceRule();
+
+  constructor(props: Props) {
     super(props);
     this.state = { editorState: EditorState.createEmpty() };
   }
 
   render() {
     return (
-      <Editor editorState={this.editorState()} onChange={this.handleInput}/>
+      <div>
+        <Editor editorState={ this.editorState() } onChange={ this.handleInput }/>
+        <button onClick={ this.transform }>Speichern</button>
+      </div>
     )
+  }
+
+  transform(): string {
+    return this.transformation.transform(this.editorState().getCurrentContent().getPlainText());
   }
 
   private editorState(): EditorState {
@@ -25,5 +35,5 @@ export class NewsaktuellEditor extends React.Component<any, any> {
 }
 
 interface Props {
-  color: any;
+  color: string;
 }
