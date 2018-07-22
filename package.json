@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx tsc --watch",
     "test": "npx jest",
-    "package": "npx jest && npx tsc"
+    "build": "npx jest && npx tsc"
   },
   "repository": {
     "type": "git",
