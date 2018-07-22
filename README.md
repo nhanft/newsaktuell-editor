@@ -8,23 +8,6 @@
 * Check integration of draftjs
 * Wrapping my head around this topic
 
-## Commands
-
-Compile on save:
-```
-npm run dev
-```
-
-Create distribution package:
-```
-npm run package
-```
-
-Run local tests:
-```
-npm run test
-```
-
 ## Code Structure
 
 `test/` and `src/` are strictly sharing the same directory structure.
@@ -39,4 +22,18 @@ Transformations:
 Validations:
 
 `src/newsktuell/validation`
+
+## Commands & Scripts
+
+Run tests
+`npx jest`
+
+Build
+`npx tsc`
+
+Create a npm package
+`npm pack`
+
+Publish npm pacakge
+`npm publish`
 

@@ -1,7 +1,6 @@
 {
   "name": "newsaktuell-editor",
   "version": "0.0.2",
-  "private": true,
   "main": "dist/index.js",
   "repository": {
     "type": "git",
