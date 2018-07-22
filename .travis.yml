@@ -6,8 +6,6 @@ before_script:
 script:
   - npx jest
   - npx tsc
-
-after_success:
   - npm pack
 
 deploy:
