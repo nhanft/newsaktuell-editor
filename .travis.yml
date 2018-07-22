@@ -1,0 +1,20 @@
+language: nodejs
+
+before_script:
+  - npm install
+
+script:
+  - npx jest
+  - npx tsc
+
+after_success:
+  - npm pack
+
+deploy:
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: "newsaktuell-editor-*.tgz"
+    skip_cleanup: true
+    on:
+      tags: true
