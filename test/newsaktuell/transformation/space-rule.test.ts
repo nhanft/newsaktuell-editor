@@ -1,4 +1,4 @@
-import {SpaceRule} from "../../../src/newsaktuell/transformation/space-rule";
+import SpaceRule from "../../../src/newsaktuell/transformation/space-rule";
 
 
 describe('Transformations', () => {

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {Editor, EditorState} from 'draft-js';
-import {SpaceRule} from "../transformation/space-rule";
+import SpaceRule from "../transformation/space-rule";
 
-export class NewsaktuellEditor extends React.Component<any, any> {
+export default class NewsaktuellEditor extends React.Component<any, any> {
 
   private transformation = new SpaceRule();
 
@@ -20,17 +20,17 @@ export class NewsaktuellEditor extends React.Component<any, any> {
     )
   }
 
-  transform(): string {
-    return this.transformation.transform(this.editorState().getCurrentContent().getPlainText());
-  }
+  transform = () => {
+    return alert(this.transformation.transform(this.editorState().getCurrentContent().getPlainText()));
+  };
 
-  private editorState(): EditorState {
+  private editorState = (): EditorState => {
     return this.state.editorState;
-  }
+  };
 
-  private handleInput(editorState: EditorState): void {
-    console.log("Hello ", editorState.getCurrentContent().getPlainText())
-  }
+  private handleInput = (editorState: EditorState): void => {
+    this.setState({editorState: editorState});
+  };
 
 }
 

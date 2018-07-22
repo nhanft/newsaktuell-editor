@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {shallow} from 'enzyme';
-import {NewsaktuellEditor} from "../../../src/newsaktuell/editor/newsaktuell-editor";
+
+import NewsaktuellEditor from "../../../src/newsaktuell/editor/newsaktuell-editor";
 
 describe('NewsaktuellEditor', async () => {
 
