@@ -1,7 +1,7 @@
 {
-  "name": "newsaktuell-editor",
-  "version": "0.0.2",
-  "main": "dist/index.js",
+  "name": "na-editor",
+  "version": "0.0.9",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/nhanft/newsaktuell-editor.git"
@@ -10,7 +10,9 @@
   "dependencies": {
     "draft-js": "^0.10.5",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "na-newsformat": "0.0.4",
+    "draft-convert": "^2.1.2"
   },
   "devDependencies": {
     "@types/draft-js": "0.10.23",

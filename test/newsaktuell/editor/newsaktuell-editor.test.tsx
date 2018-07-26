@@ -1,23 +1,23 @@
 import * as React from 'react';
 import {shallow} from 'enzyme';
-import NewsaktuellEditor from "../../../src/newsaktuell/editor/newsaktuell-editor";
+import NaEditor from '../../../src/newsaktuell/editor/na-editor';
 
-describe('NewsaktuellEditor', async () => {
+describe('NaEditor', async () => {
 
   it('hello', async () => {
-    const editor = shallow(<NewsaktuellEditor/>);
+    const editor = shallow(<NaEditor/>);
     expect(editor.text()).toContain("<DraftEditor />")
   });
 
   it('Unit test for props', async () => {
-    let editor = <NewsaktuellEditor/>;
+    let editor = <NaEditor/>;
     expect(editor.props.color).toBe(undefined);
-    editor = <NewsaktuellEditor color={"any"}/>;
+    editor = <NaEditor color={"any"}/>;
     expect(editor.props.color).toEqual("any");
   });
 
   it('renders without crashing', () => {
-    const wrapper = shallow(<NewsaktuellEditor><h2>Hello World</h2></NewsaktuellEditor>);
+    const wrapper = shallow(<NaEditor><h2>Hello World</h2></NaEditor>);
   });
 
 });

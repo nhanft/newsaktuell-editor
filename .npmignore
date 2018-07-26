@@ -1,6 +1,5 @@
 tsconfig.json
 .travis.yml
-src/
 test/
 .npmignore
 .nvmrc
@@ -11,3 +10,4 @@ newsaktuell-editor-*.tgz
 tslint.json
 README.md
 jest.config.js
+dist/
