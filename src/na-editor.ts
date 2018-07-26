@@ -1,3 +1,3 @@
-import NaEditor from "./newsaktuell/editor/newsaktuell-editor";
+import NaEditor from "./newsaktuell/editor/na-editor";
 
 export default NaEditor;
